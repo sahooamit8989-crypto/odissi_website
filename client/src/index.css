@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+
+
+/* Hide scrollbar for all browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: slide-left 20s linear infinite;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
